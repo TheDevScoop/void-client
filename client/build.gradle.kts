@@ -36,6 +36,9 @@ application {
 tasks.shadowJar {
     archiveBaseName.set("void-client")
     archiveClassifier.set("")
+    manifest {
+        attributes["Main-Class"] = "Loader"
+    }
     minimize()
 }
 
